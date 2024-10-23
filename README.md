@@ -23,6 +23,33 @@ Calculation of daily weather summaries:
 - Create subdirectories within weather_monitoring as specified in the structure.
 - Create empty Python files (__init__.py) in each directory to initialize modules.
 - Start populating the files with the appropriate code based on the README.md and your implementation details.
+```
+weather_monitoring/
+├── config/        # Configuration files
+│   └── config.py  # Stores API key and other configuration settings
+├── src/            # Source code
+│   ├── api/        # API interaction
+│   │   ├── init.py   # Module initialization
+│   │   └── weather_api.py  # Fetches weather data from OpenWeatherMap API
+│   ├── models/      # Data models
+│   │   ├── init.py   # Module initialization
+│   │   └── weather_data.py  # Defines weather data structures
+│   ├── processors/  # Data processing logic
+│   │   ├── init.py   # Module initialization
+│   │   └── data_processor.py  # Processes incoming weather data, calculates summaries
+│   └── utils/      # Utility functions
+│       ├── init.py   # Module initialization
+│       └── helpers.py  # Contains helper functions (e.g., temperature conversion)
+├── tests/         # Unit tests
+│   ├── init.py   # Module initialization
+│   └── test_weather.py  # Unit tests for weather-related functionality
+├── .env           # Environment variables (stores API key)
+├── requirements.txt  # Application dependencies
+├── README.md       # This file
+└── main.py         # Application entry point
+└── test_api.py     # Unit tests for API interaction (optional)
+```
+
 
 ## Sub Directories:
 ### *config/config.py:*
