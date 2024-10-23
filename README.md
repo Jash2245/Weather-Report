@@ -24,38 +24,38 @@ Calculation of daily weather summaries:
 - Create empty Python files (__init__.py) in each directory to initialize modules.
 - Start populating the files with the appropriate code based on the README.md and your implementation details.
 
-### Sub Directories:
-- **config/config.py:**
+## Sub Directories:
+### *config/config.py:*
 
   Stores configuration settings like the OpenWeatherMap API key and other adjustable parameters.
-- **src/api/weather_api.py:**
+### *src/api/weather_api.py:*
 
   Handles interaction with the OpenWeatherMap API, fetching weather data for the specified locations.
-- **src/models/weather_data.py:**
+### *src/models/weather_data.py:*
 
   Defines data structures to represent weather data, including temperature, weather condition, and other relevant parameters.
-- **src/processors/data_processor.py:**
+### *src/processors/data_processor.py:*
 
   Contains the core logic for processing incoming weather data, calculating daily summaries, and triggering alerts.
-- **src/utils/helpers.py:**
+### *src/utils/helpers.py:*
 
   Provides helper functions for tasks like temperature conversion and other common operations.
-- **tests/test_weather.py:**
+### *tests/test_weather.py:*
 
   Includes unit tests to verify the correctness of weather-related functionality.
-- **.env:**
+### *.env:*
 
   Stores the OpenWeatherMap API key as an environment variable for security.
-- **requirements.txt:**
+### *requirements.txt:*
 
   Lists the project's dependencies, making it easy to install them using pip install -r requirements.txt.
-- **README.md:**
+### *README.md:*
 
   Provides a detailed description of the project, its features, installation instructions, and usage guidelines.
-- **main.py:**
+### *main.py:*
 
   Serves as the application's entry point, initiating the data retrieval, processing, and alerting processes.
-- **test_api.py:**
+### *test_api.py:*
 
   (Optional) Contains unit tests specifically for API interaction, ensuring proper communication with the OpenWeatherMap API.
 
